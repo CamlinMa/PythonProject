@@ -1,0 +1,133 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>聚类分析--报告</title>
+<style type="text/css">
+body {
+	background-color: #FFFFFF;
+}
+#left {
+    float:left;
+}
+#right {
+    float:right;
+}
+#main {
+    float:top;
+}
+.title {
+	font-size: 30px;
+	color: #333;
+	text-align: center;
+	font-weight: bold;
+}
+.info {
+	text-align: center;
+	font-family: "等线";
+	font-size: 16px;
+}
+.info_B_desc {
+    text-align: left;
+    font-size: 16px;
+	background-color: #999;
+}
+.info_B_title {
+	font-size: 18px;
+}
+</style>
+</head>
+<body>
+<table>
+    <tr>
+        <td>
+            <p class="title">原始数据聚类结果</p>
+                <hr />
+                <br>
+                <table width="627" border="1" align="center" cellspacing="0" class="info">
+  <tr>
+    <td width="132">描述</td>
+    <td width="479">聚类任务描述</td>
+  </tr>
+  <tr>
+    <td>样本数</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>聚类特征</td>
+    <td>特征1</br>特征2</br></td>
+  </tr>
+  <tr>
+    <td>聚类权重</td>
+    <td>特征1&nbsp;&nbsp;1</br>特征2&nbsp;&nbsp;1</br></td>
+  </tr>
+  <tr>
+    <td height="30">聚类数</td>
+    <td>6</td>
+  </tr>
+</table>
+                <br>
+                <hr />
+                <br>
+                <table width="900" border="1" align="center" cellpadding="1" cellspacing="0" class="info" >
+  <caption class="info_B_title">
+    聚类质心<br>
+  </caption>
+  <tr><th scope="row">序号</th><td>特征1<br></td><td>特征2<br></td><td class="info_B_desc">&nbsp;&nbsp;代表样本&nbsp;&nbsp;<br></td><td class="info_B_desc">&nbsp;&nbsp;样本分布&nbsp;&nbsp;<br></td></tr><tr><th scope="row">1</th><td>&nbsp512.2</td><td>&nbsp12.4</td><td class="info_B_desc"><br>样本88<br>样本89<br></td><td class="info_B_desc"><br>(共13个样本<br>占比13.0&nbsp%)<br></td></tr><tr><th scope="row">2</th><td>&nbsp144.3</td><td>&nbsp112.2</td><td class="info_B_desc"><br>样本35<br>样本50<br></td><td class="info_B_desc"><br>(共13个样本<br>占比13.0&nbsp%)<br></td></tr><tr><th scope="row">3</th><td>&nbsp12.1</td><td>&nbsp118.5</td><td class="info_B_desc"><br>样本86<br>样本84<br></td><td class="info_B_desc"><br>(共24个样本<br>占比24.0&nbsp%)<br></td></tr><tr><th scope="row">4</th><td>&nbsp20.5</td><td>&nbsp24.0</td><td class="info_B_desc"><br>样本1<br>样本2<br></td><td class="info_B_desc"><br>(共13个样本<br>占比13.0&nbsp%)<br></td></tr><tr><th scope="row">5</th><td>&nbsp129.9</td><td>&nbsp176.1</td><td class="info_B_desc"><br>样本45<br>样本23<br></td><td class="info_B_desc"><br>(共17个样本<br>占比17.0&nbsp%)<br></td></tr><tr><th scope="row">6</th><td>&nbsp15.8</td><td>&nbsp84.8</td><td class="info_B_desc"><br>样本7<br>样本13<br></td><td class="info_B_desc"><br>(共20个样本<br>占比20.0&nbsp%)<br></td></tr>
+</table>
+                <br>
+                <div align="center"><img src="images/test.png"></div>
+                <hr />
+                <br>
+                <table width="858" border="1" align="center" cellspacing="0" class="info">
+<tr><th><span style="color:red">备注</span></th><td><span style="color:deeppink">标记4</span>&nbsp;<span style="color:darkorange">标记5</span>&nbsp;<span style="color:blue">标记3</span>&nbsp;<span style="color:red">标记1</span>&nbsp;<span style="color:lime ">标记2</span>&nbsp;</td></tr><tr><th scope="row">序号</th><td>包含的样本</td></tr><tr><td>1<br>(共13个样本<br>占比13.0&nbsp%)</th><td><span style="color:darkorange">样本100</span>,<span style="color:darkorange">样本99</span>,<span style="color:darkorange">样本98</span>,<span style="color:darkorange">样本97</span>,<span style="color:darkorange">样本96</span>,<br><span style="color:darkorange">样本95</span>,<span style="color:darkorange">样本94</span>,<span style="color:darkorange">样本93</span>,<span style="color:darkorange">样本92</span>,<span style="color:darkorange">样本91</span>,<br><span style="color:darkorange">样本90</span>,<span style="color:darkorange">样本89</span>,<span style="color:lime ">样本88</span>,</td></tr><tr><td>2<br>(共13个样本<br>占比13.0&nbsp%)</th><td><span style="color:blue">样本48</span>,<span style="color:blue">样本33</span>,<span style="color:blue">样本31</span>,<span style="color:blue">样本30</span>,<span style="color:blue">样本26</span>,<br><span style="color:blue">样本25</span>,<span style="color:blue">样本21</span>,<span style="color:blue">样本22</span>,<span style="color:blue">样本37</span>,<span style="color:blue">样本42</span>,<br><span style="color:blue">样本47</span>,<span style="color:blue">样本50</span>,<span style="color:blue">样本35</span>,</td></tr><tr><td>3<br>(共24个样本<br>占比24.0&nbsp%)</th><td><span style="color:lime ">样本87</span>,<span style="color:lime ">样本82</span>,<span style="color:deeppink">样本67</span>,<span style="color:deeppink">样本77</span>,<span style="color:deeppink">样本73</span>,<br><span style="color:deeppink">样本69</span>,<span style="color:deeppink">样本68</span>,<span style="color:deeppink">样本67</span>,<span style="color:deeppink">样本66</span>,<span style="color:deeppink">样本59</span>,<br><span style="color:deeppink">样本63</span>,<span style="color:deeppink">样本62</span>,<span style="color:deeppink">样本59</span>,<span style="color:blue">样本58</span>,<span style="color:blue">样本57</span>,<br><span style="color:deeppink">样本64</span>,<span style="color:deeppink">样本75</span>,<span style="color:deeppink">样本70</span>,<span style="color:blue">样本44</span>,<span style="color:deeppink">样本76</span>,<br><span style="color:deeppink">样本74</span>,<span style="color:blue">样本56</span>,<span style="color:lime ">样本84</span>,<span style="color:lime ">样本86</span>,</td></tr><tr><td>4<br>(共13个样本<br>占比13.0&nbsp%)</th><td><span style="color:blue">样本20</span>,<span style="color:blue">样本19</span>,<span style="color:blue">样本18</span>,<span style="color:blue">样本17</span>,<span style="color:blue">样本14</span>,<br><span style="color:lime ">样本12</span>,<span style="color:red">样本11</span>,<span style="color:red">样本10</span>,<span style="color:red">样本6</span>,<span style="color:red">样本5</span>,<br><span style="color:red">样本3</span>,<span style="color:red">样本2</span>,<span style="color:red">样本1</span>,</td></tr><tr><td>5<br>(共17个样本<br>占比17.0&nbsp%)</th><td><span style="color:blue">样本52</span>,<span style="color:blue">样本49</span>,<span style="color:blue">样本46</span>,<span style="color:blue">样本43</span>,<span style="color:blue">样本41</span>,<br><span style="color:blue">样本40</span>,<span style="color:blue">样本39</span>,<span style="color:blue">样本38</span>,<span style="color:blue">样本36</span>,<span style="color:blue">样本34</span>,<br><span style="color:blue">样本32</span>,<span style="color:blue">样本29</span>,<span style="color:blue">样本28</span>,<span style="color:blue">样本27</span>,<span style="color:blue">样本24</span>,<br><span style="color:blue">样本23</span>,<span style="color:blue">样本45</span>,</td></tr><tr><td>6<br>(共20个样本<br>占比20.0&nbsp%)</th><td><span style="color:lime ">样本85</span>,<span style="color:lime ">样本80</span>,<span style="color:deeppink">样本79</span>,<span style="color:deeppink">样本78</span>,<span style="color:deeppink">样本72</span>,<br><span style="color:deeppink">样本71</span>,<span style="color:deeppink">样本61</span>,<span style="color:blue">样本54</span>,<span style="color:blue">样本53</span>,<span style="color:red">样本8</span>,<br><span style="color:blue">样本15</span>,<span style="color:blue">样本51</span>,<span style="color:blue">样本55</span>,<span style="color:deeppink">样本60</span>,<span style="color:lime ">样本83</span>,<br><span style="color:red">样本4</span>,<span style="color:blue">样本16</span>,<span style="color:red">样本9</span>,<span style="color:lime ">样本13</span>,<span style="color:red">样本7</span>,<br></td></tr>
+</table>
+                <hr />
+        </td>
+        <td>
+            <p class="title">主成分聚类结果</p>
+                <hr />
+                <br>
+                <table width="627" border="1" align="center" cellspacing="0" class="info">
+  <tr>
+    <td width="132">描述</td>
+    <td width="479">聚类任务描述</td>
+  </tr>
+  <tr>
+    <td>样本数</td>
+    <td>100</td>
+  </tr>
+  <tr>
+    <td>聚类特征</td>
+    <td>特征1</br>特征2</br></td>
+  </tr>
+  <tr>
+    <td height="30">聚类数</td>
+    <td>6</td>
+  </tr>
+    <tr>
+    <td height="30">主成分数</td>
+    <td>2</td>
+  </tr>
+</table>
+                <br>
+                <hr />
+                <br>
+                <table width="900" border="1" align="center" cellpadding="1" cellspacing="0" class="info" >
+  <caption class="info_B_title">
+    聚类质心<br>
+  </caption>
+  <tr><th scope="row">序号</th><td>特征1<br></td><td>特征2<br></td><td class="info_B_desc">&nbsp;&nbsp;代表样本&nbsp;&nbsp;<br></td><td class="info_B_desc">&nbsp;&nbsp;样本分布&nbsp;&nbsp;<br></td></tr><tr><th scope="row">1</th><td>&nbsp20.1</td><td>&nbsp118.7</td><td class="info_B_desc"><br>样本35<br>样本44<br></td><td class="info_B_desc"><br>(共26个样本<br>占比26.0&nbsp%)<br></td></tr><tr><th scope="row">2</th><td>&nbsp133.9</td><td>&nbsp161.7</td><td class="info_B_desc"><br>样本22<br>样本23<br></td><td class="info_B_desc"><br>(共24个样本<br>占比24.0&nbsp%)<br></td></tr><tr><th scope="row">3</th><td>&nbsp19.1</td><td>&nbsp26.4</td><td class="info_B_desc"><br>样本7<br>样本1<br></td><td class="info_B_desc"><br>(共14个样本<br>占比14.0&nbsp%)<br></td></tr><tr><th scope="row">4</th><td>&nbsp41.5</td><td>&nbsp85.5</td><td class="info_B_desc"><br>样本85<br>样本26<br></td><td class="info_B_desc"><br>(共23个样本<br>占比23.0&nbsp%)<br></td></tr><tr><th scope="row">5</th><td>&nbsp577.4</td><td>&nbsp13.9</td><td class="info_B_desc"><br>样本97<br>样本98<br></td><td class="info_B_desc"><br>(共8个样本<br>占比8.0&nbsp%)<br></td></tr><tr><th scope="row">6</th><td>&nbsp408.0</td><td>&nbsp10.0</td><td class="info_B_desc"><br>样本90<br>样本91<br></td><td class="info_B_desc"><br>(共5个样本<br>占比5.0&nbsp%)<br></td></tr>
+</table>
+                <br>
+                <div align="center"><img src="images/test_pca.png"></div>
+                <hr />
+                <br>
+                <table width="858" border="1" align="center" cellspacing="0" class="info">
+<tr><th><span style="color:red">备注</span></th><td><span style="color:deeppink">标记4</span>&nbsp;<span style="color:darkorange">标记5</span>&nbsp;<span style="color:blue">标记3</span>&nbsp;<span style="color:red">标记1</span>&nbsp;<span style="color:lime ">标记2</span>&nbsp;</td></tr><tr><th scope="row">序号</th><td>包含的样本</td></tr><tr><td>1<br>(共26个样本<br>占比26.0&nbsp%)</th><td><span style="color:lime ">样本87</span>,<span style="color:lime ">样本86</span>,<span style="color:lime ">样本84</span>,<span style="color:lime ">样本82</span>,<span style="color:deeppink">样本67</span>,<br><span style="color:deeppink">样本77</span>,<span style="color:deeppink">样本76</span>,<span style="color:deeppink">样本75</span>,<span style="color:deeppink">样本74</span>,<span style="color:deeppink">样本73</span>,<br><span style="color:deeppink">样本70</span>,<span style="color:deeppink">样本69</span>,<span style="color:deeppink">样本68</span>,<span style="color:deeppink">样本67</span>,<span style="color:deeppink">样本66</span>,<br><span style="color:deeppink">样本59</span>,<span style="color:deeppink">样本64</span>,<span style="color:deeppink">样本63</span>,<span style="color:deeppink">样本62</span>,<span style="color:deeppink">样本59</span>,<br><span style="color:blue">样本58</span>,<span style="color:blue">样本57</span>,<span style="color:blue">样本56</span>,<span style="color:blue">样本21</span>,<span style="color:blue">样本44</span>,<br><span style="color:blue">样本35</span>,</td></tr><tr><td>2<br>(共24个样本<br>占比24.0&nbsp%)</th><td><span style="color:blue">样本52</span>,<span style="color:blue">样本50</span>,<span style="color:blue">样本49</span>,<span style="color:blue">样本48</span>,<span style="color:blue">样本47</span>,<br><span style="color:blue">样本46</span>,<span style="color:blue">样本45</span>,<span style="color:blue">样本43</span>,<span style="color:blue">样本42</span>,<span style="color:blue">样本41</span>,<br><span style="color:blue">样本40</span>,<span style="color:blue">样本39</span>,<span style="color:blue">样本38</span>,<span style="color:blue">样本37</span>,<span style="color:blue">样本36</span>,<br><span style="color:blue">样本34</span>,<span style="color:blue">样本33</span>,<span style="color:blue">样本32</span>,<span style="color:blue">样本29</span>,<span style="color:blue">样本28</span>,<br><span style="color:blue">样本27</span>,<span style="color:blue">样本24</span>,<span style="color:blue">样本23</span>,<span style="color:blue">样本22</span>,</td></tr><tr><td>3<br>(共14个样本<br>占比14.0&nbsp%)</th><td><span style="color:blue">样本20</span>,<span style="color:blue">样本19</span>,<span style="color:blue">样本18</span>,<span style="color:blue">样本17</span>,<span style="color:blue">样本14</span>,<br><span style="color:lime ">样本12</span>,<span style="color:red">样本11</span>,<span style="color:red">样本10</span>,<span style="color:red">样本6</span>,<span style="color:red">样本5</span>,<br><span style="color:red">样本3</span>,<span style="color:red">样本2</span>,<span style="color:red">样本1</span>,<span style="color:red">样本7</span>,</td></tr><tr><td>4<br>(共23个样本<br>占比23.0&nbsp%)</th><td><span style="color:lime ">样本83</span>,<span style="color:lime ">样本80</span>,<span style="color:deeppink">样本78</span>,<span style="color:deeppink">样本72</span>,<span style="color:deeppink">样本71</span>,<br><span style="color:deeppink">样本61</span>,<span style="color:deeppink">样本60</span>,<span style="color:blue">样本55</span>,<span style="color:blue">样本54</span>,<span style="color:blue">样本53</span>,<br><span style="color:blue">样本51</span>,<span style="color:blue">样本16</span>,<span style="color:blue">样本15</span>,<span style="color:lime ">样本13</span>,<span style="color:red">样本9</span>,<br><span style="color:red">样本8</span>,<span style="color:red">样本4</span>,<span style="color:blue">样本25</span>,<span style="color:blue">样本30</span>,<span style="color:blue">样本31</span>,<br><span style="color:deeppink">样本79</span>,<span style="color:blue">样本26</span>,<span style="color:lime ">样本85</span>,</td></tr><tr><td>5<br>(共8个样本<br>占比8.0&nbsp%)</th><td><span style="color:darkorange">样本100</span>,<span style="color:darkorange">样本93</span>,<span style="color:darkorange">样本92</span>,<span style="color:darkorange">样本89</span>,<span style="color:lime ">样本88</span>,<br><span style="color:darkorange">样本96</span>,<span style="color:darkorange">样本98</span>,<span style="color:darkorange">样本97</span>,</td></tr><tr><td>6<br>(共5个样本<br>占比5.0&nbsp%)</th><td><span style="color:darkorange">样本99</span>,<span style="color:darkorange">样本95</span>,<span style="color:darkorange">样本94</span>,<span style="color:darkorange">样本91</span>,<span style="color:darkorange">样本90</span>,<br></td></tr>
+</table>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

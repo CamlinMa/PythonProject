@@ -1,0 +1,32 @@
+用于抓取格式化数据并存入csv文件
+
+
+首先配置config.py 为 本地 Clawler 文件夹
+使用 get_page 函数会自动保存网页源码，再次访问该网址时直接从本地读取 减少请求次数
+需要更新信息 可以清理tmp 文件夹或 使用   get_page_nosave 函数
+
+编码默认使用 utf-8
+
+
+编写的爬虫放置在 scrapers 文件夹下
+
+CAFord.py 为抓取长安福特官网的经销商信息
+运行 CAFord.py 即可
+
+
+自定义爬虫
+
+需导入
+from crawler.crawler import *
+import time
+
+建议添加
+
+data_head=[
+  ['','','']  # 定义csv文件第一行字段
+]
+name='' # 结果文件名   name_日期
+create_time = str(time.strftime("%Y%m%d"))
+create_csv(data_head, name + '_' + create_time)
+
+save_csv(data,name + '_' + create_time) # 保存一条数据
