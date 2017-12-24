@@ -1,8 +1,8 @@
 # _*_ coding:utf-8 _*_
 
+import os
 
-
-WORK_DIR = r''
+WORK_DIR = os.getcwd().replace('\\', '/').replace('/scrapers','').replace('/scrapers/AU','').replace('/scrapers/CN','').replace('/scrapers/JP','').replace('/scrapers/other','').replace('/scrapers/TW','')
 
 
 def get_temp_path():

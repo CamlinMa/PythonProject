@@ -3,11 +3,12 @@
 from config import *
 import os
 import csv
-import time
+# import time
 
 
 class Read(object):
     def check_temp(self, file_name):
+        # 检查本地缓存
         file_full_name = file_name + '.txt'
         file_list = self.get_file_list()
         if file_full_name in file_list:
@@ -15,7 +16,8 @@ class Read(object):
             return file_path
 
     def load_temp_file(self, file_path):
-        temp_file = open(file_path, 'r', encoding='utf-8')
+        # 加载已缓存文件
+        temp_file = open(file_path, 'r')
         page = temp_file.read()
         temp_file.close()
         print('load temp file successful')
@@ -30,11 +32,13 @@ class Read(object):
         return page
 
     def get_file_list(self):
+        # 获取为缓存文件列表
         dir = get_temp_path()
         return os.listdir(dir)
 
     def get_citycode(self):
-        path = get_work_path() + '/citycode.txt'
+        # 城市代码
+        path = get_work_path() + '/lib/citycode.txt'
         try:
             file = open(path, 'r')
             data = file.read()
@@ -71,12 +75,12 @@ class Save(object):
 
     def save_temp(self, file_name, page):
         file_path = get_temp_path() + '/' + file_name + '.txt'
-        temp_file = open(file_path, 'w',encoding='utf-8')
+        temp_file = open(file_path, 'w')
         temp_file.write(page)
         temp_file.close()
 
     # print('save temp file successful')
-
+'''
     def save_txt(self, data, file_name):
         result_file_name = get_result_path() + '/' + file_name + '_' + str(time.strftime("%Y%m%d")) + '.txt'
 
@@ -93,3 +97,4 @@ class Save(object):
                 result_file.write('\n')
             result_file.close()
         print("okkkkkkkk")
+'''

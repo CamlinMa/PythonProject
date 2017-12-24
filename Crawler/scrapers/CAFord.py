@@ -29,14 +29,14 @@ for prov_match in prov_list:
         geo_url = 'http://restapi.amap.com/v3/geocode/geo?key=1891d0f847c0a210a88015fdd4c3bc46&s=rsv3&callback=jsonp_232&platform=JS&logversion=2.0&sdkversion=1.3&appname=http://www.ford.com.cn/dealer/locator?intcmp=hp-return-fd&csid=D6C889F7-2FF1-4EA5-8D60-494D42872518&address=' + str(
             prov2) + str(city2) + '&callback=jsonp_232'
 
-        geo_str = get_page(geo_url)
+        geo_str = get_page_nosave(geo_url)
         try:
             geo = re.search(r'location\":\"([^\"]+)\"', geo_str).group(1)
         except:
             continue
         dealer_url = 'http://yuntuapi.amap.com/datasearch/around?s=rsv3&key=1891d0f847c0a210a88015fdd4c3bc46&extensions=base&language=en&enc=utf-8&output=jsonp&sortrule=_distance:1&keywords=&limit=100&tableid=55adb0c7e4b0a76fce4c8dd6&radius=35000&callback=jsonp_333&platform=JS&logversion=2.0&sdkversion=1.3&appname=http://www.ford.com.cn/dealer/locator?intcmp=hp-return-fd&csid=C0F2C0C7-D2A2-4730-9618-5B2C060C3DDD&center=' + str(
             geo) + '&filter=AdministrativeArea:' + str(prov2) + '&Locality:' + str(city2) + '&callback=jsonp_333'
-        dealer_page = get_page(dealer_url)
+        dealer_page = get_page_nosave(dealer_url)
         dealer_list = json.loads(re.search(r'\{(.+)\}', dealer_page).group(0))
         for dealer in dealer_list['datas']:
             if dealer['DealerAffiliation'] == 'Category3':
